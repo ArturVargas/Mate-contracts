@@ -14,8 +14,10 @@ async function main() {
   const MateBook = await ethers.getContractFactory("MateBook");
   // Mumbai: weth, opv3
   const mateBook = await MateBook.deploy(
-    "0xE03CFC9e275BD1298E77eA26d643feD7cd1AdBE2",
-    "0x263351499f82C107e540B01F0Ca959843e22464a"
+    // "0xE03CFC9e275BD1298E77eA26d643feD7cd1AdBE2",
+    "0x44fA8E6f47987339850636F88629646662444217",
+    "0x22A9AaAC9c3184f68C7B7C95b1300C4B1D2fB95C"
+    // "0x263351499f82C107e540B01F0Ca959843e22464a"
   );
 
   await mateBook.deployed();
